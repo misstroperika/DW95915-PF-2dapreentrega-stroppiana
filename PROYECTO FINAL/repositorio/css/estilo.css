@@ -1,0 +1,387 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+}
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    height: 100%;
+    background-color: #D9D9D9;
+}
+
+
+ul{
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+li{
+    font-family:  "Mukta", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #2D5093;
+    list-style-type: none;
+    display: inline-block;
+}
+
+h3{
+    font-family:  "Mukta", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+main{
+    background-color: #AFB7C7;
+}
+
+#homemain{
+    height: 800px;
+    background-image: url(../IMG/mainImage.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#homemaintitle{
+    font-family: "Mukta", sans-serif;
+    color: #2D5093;
+    text-align: center;
+}
+
+h1{
+    font-family: "Mukta", sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    color: #2D5093;
+    text-align: center;
+}
+
+h2{
+    font-family: "Mukta", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #2D5093;
+    text-align: center;
+}
+
+
+.colorParrafo{
+    font-family: "Mukta", sans-serif;
+    font-size: 20px;
+    color: #2D5093;
+}
+
+h3{
+    font-family: "Mukta", sans-serif;
+    font-size: 20px;
+    color: #EC940F;
+}
+
+footer{
+    background-color: #D9D9D9;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.imgFooter{
+    display: inline-block;
+    padding-top: 30px;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.listacarrito{
+    display: flex;
+    flex-direction: column;
+}
+
+/* FINCA*/
+
+.padregrillafinca{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+.hijogrillaimgfinca{
+    grid-area: a1;
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.hijogrillatextofinca{
+    grid-area: a2;
+    width: 90%;
+    height: 90%;
+}
+
+.hijogrillaubicacionfinca{
+    grid-area: a3;
+    width: 90%;
+    height: 90%;
+}
+
+/* PRODUCTOS */
+
+#padreflexproductos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* TIENDA */
+
+.grilla{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 30% 30%;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-areas: "a1 a2 a3"
+                         "a4 a5 a6";
+    column-gap: 5%;
+    row-gap: 5px;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+                        
+}
+
+.hijo1grilla{
+    grid-area: a1;
+    width: 80%;
+    height: 90%;
+
+}
+.hijo2grilla{
+    grid-area: a2;
+    width: 80%;
+    height: 90%;
+
+}
+.hijo3grilla{
+    grid-area: a3;
+    width: 80%;
+    height: 90%;
+
+}
+.hijo4grilla{
+    grid-area: a4;
+    width: 80%;
+    height: 90%;
+
+}
+.hijo5grilla{
+    grid-area: a5;
+    width: 80%;
+    height: 90%;
+
+}
+.hijo6grilla{
+    grid-area: a6;
+    width: 80%;
+    height: 90%;
+
+}
+
+/* RESPONSIVE*/
+
+/* Small */
+
+@media only screen and (max-width:600px){
+    .grilla{
+        display: grid;
+        height: 100%;
+        grid-template-rows: 70% 70% 70% 70% 70%; 
+        grid-template-columns: 70%;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3"
+                             "a4"
+                             "a5"
+                             "a6";
+        row-gap: 1px;
+        justify-items: center;
+        align-items: center;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+                            
+    }
+   
+    header{
+        height: 100%;
+        width: 100%;
+    }
+    ul{
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-top: 15px;
+        align-items: center;
+    }
+    li{
+        display: inline-block;
+    }
+
+    #homemain{
+        height: 500px;
+        width: 100%;
+    }
+    #homemaintitle{
+        font-weight: 500;
+        font-size: 60px;
+        padding-top: 150px;
+    }
+    main{
+        height: 100%;
+        width: 100%;
+       
+    }
+    footer{
+        height: 100%;
+        width: 100%;
+    }
+
+    #padreflexproductos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .padregrillafinca{
+        grid-template-rows: 70% 70% 70%;
+        grid-template-columns: 100%;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3";
+        row-gap: 1%;
+    }
+    
+}
+
+/* Medium */
+
+@media only screen and (min-width:600px){
+    .grilla{
+        display: grid;
+        height: 100%;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-columns:  45% 45%;
+        grid-template-areas: "a1 a2"
+                             "a3 a4"
+                             "a5 a6";
+        column-gap: 5%;
+        row-gap: 5px;
+        justify-items: center;
+        align-items: center;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+                            
+    }
+   
+
+    #homemaintitle{
+        font-weight: 700;
+        font-size: 90px;
+        padding-top: 220px;
+    }
+
+    main{
+        height: 1000px;
+        width: 100%;
+       
+    }
+    footer{
+        height: 100%;
+        width: 100%;
+    }
+
+    #padreflexproductos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .padregrillafinca{
+        grid-template-rows: 70% 70% 70%;
+        grid-template-columns: 70%;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3";
+        row-gap: 10%;
+    }
+}
+    
+
+
+/* Large */
+
+@media only screen and (min-width:992px) {
+    .grilla{
+        display: grid;
+        height: 100%;
+        grid-template-rows: 30% 30%;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-areas: "a1 a2 a3"
+                             "a4 a5 a6";
+        column-gap: 5%;
+        row-gap: 5px;
+        justify-items: center;
+        align-items: center;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+                            
+    }
+       
+    #homemaintitle{
+        font-weight: 900;
+        font-size: 120px;
+        padding-top: 260px;
+    }
+    main{
+        height: 1200px;
+        width: 100%;
+       
+    }
+    footer{
+        height: 100%;
+        width: 100%;
+    }
+
+    #padreflexproductos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .padregrillafinca{
+        grid-template-rows: 45% 45%;
+        grid-template-columns: 45% 45%;
+        grid-template-areas: "a1 a2"
+                             "a3 a3";
+        column-gap: 5%;
+        row-gap: 10%;
+    }
+}
